@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-300">
+
+    <div class="container max-w-[1000px] mx-auto flex justify-center items-center h-screen flex-col">
+        <form id="participantForm" class="flex  flex-col max-w-[500px] w-full gap-[10px] bg-white p-[20px] rounded-md shadow-lg">
+            <h2 class="text-[30px]">Add a new participant</h2>
+            <input  class="border-2 form-input border-gray-500 rounded-md indent-2 h-[36px] p-[20px] " type="text" id="name" placeholder="Participant's name">
+            <input  class="border-2 form-input border-gray-500 rounded-md indent-2 h-[36px] p-[20px]" type="number" id="age" placeholder="Age of the participant">
+            <input  class="border-2 form-input border-gray-500 rounded-md indent-2 h-[36px] p-[20px]" type="url" id="url" placeholder="Enter participant's image url">
+            <select class="border-2 form-input border-gray-500 rounded-md indent-2 h-[36px] text-slate-500 p-[20px]">
+                <option class="text-slate-500" disabled selected > Club</option>
+                <option value="falling">Falling</option>
+            </select>
+            <select class=" form-input border-2 border-gray-500 rounded-md indent-2 h-[36px]  text-gray-500 p-[20px]" >
+                <option  class="text-slate-500"disabled selected >Participant's place of birth</option>
+                <option value="Portugaliya">Portugaliya</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Braziliya">Braziliya</option>
+                <option value="Fransiya">Fransiya</option>
+            </select>
+            <button class="bg-green-600 text-white p-[10px] rounded-md" type="submit">Create new participant</button>
+        </form>
+        <div class="partList  bg-white w-full max-w-[500px] mt-[50px] rounded-md p-[20px]"></div>
+    </div>
+    <script src="./app.js"></script>
+
+
+  
+</body>
+</html>
